@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyBlog</title>
+
+    <style>
+        * {
+          box-sizing: border-box;
+        }
+        
+        .column {
+          float: left;
+          padding: 10px;
+          height: 300px; 
+        
+        }
+        
+        .left, .right {
+          width: 15%;
+          
+        }
+        
+        .middle {
+          width: 65%;
+          border-left-style: solid;
+          border-color:green
+        }
+        
+        .row:after {
+          content: "";
+          display: table;
+          clear: both;
+        }
+
+        .vertical-menu {
+  width: 200px;
+}
+
+.vertical-menu a {
+  background-color: #eee;
+  color: black;
+  display: block;
+  padding: 12px;
+  text-decoration: none;
+}
+
+.vertical-menu a:hover {
+  background-color: #ccc;
+}
+
+.vertical-menu a.active {
+  background-color: #04AA6D;
+  color: white;
+}
+
+#one{ border-style:solid;
+      border-color:green;}
+     
+        </style>
+        <link rel="stylessheet" href="styles.css"
+</head>
+<body>
+ <h1 style="font-size:75px; background-color:yellow " align="center" >My blog about my life</h1>
+ <div>
+ <div class="row" >
+    <div class="column left; vertical-menu">
+      
+        <h2>Menu</h2>
+      <a href="#" class="active">Home</a>
+      <a href="p1.html">Studies</a>
+      <a href="#">Trip to Spain</a>
+      <a href="#">Adress and Contact</a>
+      
+      </div>
+
+    <div class="column middle">
+      <h2>My To-do list</h2>
+      <p>Sleep</p>
+      <p>Buy bread</p>
+      <p>Visit parents</p>
+      <p>Was dishes</p>
+    </div>
+    <div class="column right" >
+      <table id="one">
+       <tr><th>Latest Posts</th></tr>
+       <tr><td style="color:blue" align="right">About Spain</td></tr>
+       <tr><td style="color:blue" align="right" >About University</td></tr>
+       <tr><td style="color:blue" align="right">Graduation</td></tr>
+
+      </table>
+    </div>
+  </div>
+  </div>
+</body>
+</html>
