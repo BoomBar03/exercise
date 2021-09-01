@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrays</title>
+  <script src="script.js"></script>
+</head>
+<body>
+<label>Value1</label>
+<input type="text" id="userinput1" value="0">
+<label>Value2</label>
+<input type="text" id="userinput2" value="0">
+<p>Insert values up</p>
+<button type="button" onclick="sumv()">Sum</button>
+<button type="button" onclick="multv()">Multiplication</button>
+<button type="button" onclick="div()">Division</button>
+<button type="button" onclick="rest()">Rest</button>
+<button type="button" onclick="mod()">module</button>
+
+<br>
+<label>Result</label>
+<input type="text" disabled id="resultv" style="margin-top:1cm;" value="0">
+<p id="resultv"></p>
+
+<script>
+function sumv(){
+  var x=parseInt(document.getElementById("userinput1").value);
+  var y=parseInt(document.getElementById("userinput2").value);
+  var result=x+y;
+  document.getElementById("resultv").value=result;
+  document.getElementById("resultv").innerHTML=result;
+}
+
+function multv(){
+  var x=parseInt(document.getElementById("userinput1").value);
+  var y=parseInt(document.getElementById("userinput2").value);
+  var result=x*y;
+  document.getElementById("resultv").value=result;
+  document.getElementById("resultv").innerHTML=result;
+}
+
+function div(){
+  var x=parseInt(document.getElementById("userinput1").value);
+  var y=parseInt(document.getElementById("userinput2").value);
+  var result=x/y;
+  document.getElementById("resultv").value=result;
+  document.getElementById("resultv").innerHTML=result;
+}
+
+function rest(){
+  var x=parseInt(document.getElementById("userinput1").value);
+  var y=parseInt(document.getElementById("userinput2").value);
+  var result=x%y;
+  document.getElementById("resultv").value=result;
+  document.getElementById("resultv").innerHTML=result;
+}
+
+function mod(){
+  var x=parseInt(document.getElementById("userinput1").value);
+  var y=parseInt(document.getElementById("userinput2").value);
+  var z=x-y;
+  if(z<0) z=-z;
+  document.getElementById("resultv").value=z;
+  document.getElementById("resultv").innerHTML=z;
+}
+
+</script>
+
+
+</body>
+</html>
